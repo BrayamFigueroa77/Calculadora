@@ -1,0 +1,103 @@
+*{
+    border-radius: 10px;
+    border: none;
+}
+
+body{
+    background: linear-gradient(to right, red, rgb(150, 10, 181), black);
+}
+
+input:hover{
+    transition: all;
+    opacity: 0.5;
+    cursor: pointer;
+    color: aliceblue;
+    text-shadow: 
+    2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 1px 0 #000000;
+}
+
+#resultados:hover{
+    transition: all;
+    opacity: 0.8;
+    border: solid black;
+    
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: black;
+}
+
+h1, input{
+    margin-inline: auto;
+    padding-inline: auto;
+    font: bolder;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-weight: 100px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.titulo{
+    font-size: 2.5vw;
+    color: rgb(0, 0, 0);
+    text-shadow: 
+    1px 1px 0 #ff0000, -1px -1px 0 #ff0000, 1px -1px 0 #ff0000, -1px 1px 0 #ff0000;
+}
+
+.Contenedor{
+    margin-inline: auto;
+    padding: 30px;
+    height: 75vh;
+    width: 35vw;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+} 
+
+.pantalla_resultados{
+    border: solid rgba(63, 60, 60, 0.6) ;
+    margin-inline: auto;
+    height: 40%;
+    width: 99%;
+    display: flex; /* Activar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#resultado{
+    width: 80%;
+    height: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 56px);
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#AC{
+    grid-column: span 2;
+    grid-row: span 1;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+#igual{
+    grid-column: span 1;
+    grid-row: span 2;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+#numero0, #numero1, #numero2, #numero3, #numero4, #numero5, #numero6, #numero7, #numero8, #numero9, #dividir, #multiplicar, #restar, #sumar, #punto, #nn, #punto_decimal{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+#dividir, #multiplicar, #restar, #sumar, #punto, #nn, #punto_decimal{
+    background-color: rgb(0, 0, 0, 0.5);
+}
